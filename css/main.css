@@ -2,15 +2,12 @@
 @import url("https://fonts.google.com/specimen/Big+Shoulders+Display");
 
 * {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: 0;
   padding: 0;
   font-size: 15px;
 }
 body {
   background: hsl(0, 0%, 95%);
-  background-size: cover;
   overflow: hidden;
 }
 .container {
@@ -68,15 +65,19 @@ button {
   width: 70%;
   margin-top: 40px;
   border: none;
+  border: 2px solid hsl(0, 0%, 95%);
   padding: 5px;
   font-size: 0.75rem;
   cursor: pointer;
   transition: all 0.8s ease;
-  color: hsl(0, 0%, 95%);
-  z-index: -1;
+  background-color: hsl(0, 0%, 95%);
+  font-weight: 700;
 }
 button:active {
   transform: scale(0.75);
+}
+button:hover {
+  background: none;
 }
 
 @media (max-width: 375px) {
@@ -101,3 +102,4 @@ button:active {
     border-bottom-right-radius: 5px;
   }
 }
+
